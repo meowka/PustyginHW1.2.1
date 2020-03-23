@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
             @SuppressLint("SetTextI18n")
             @Override
             public void onClick(View view) {
-                alertText.setText("Подписка на рассылку успешно оформлена для пользователя " + userName.getText() + " на электронный адрес " + userEmail.getText());
+                alertText.setText(getString(R.string.alertInfoUserName) + userName.getText() + getString(R.string.alertInfoUserEmail) + userEmail.getText());
             }
         });
         btnClear.setOnClickListener(new View.OnClickListener() {
